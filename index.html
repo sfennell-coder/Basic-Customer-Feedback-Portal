@@ -4,6 +4,25 @@
     <title>Basic Customer Feedback Portal</title>
 </head>
 <body>
-    
+    <p><b><u>Please complete the feedback form:</u></b></p>
+    <form id="feedbackForm">
+        <label for="firstName">First name:</label>
+        <input type="text" name="firstName" id="firstName" required>
+        <label for="lastName"> Last name:</label>
+        <input type="text" name="lastName" id="lastName" required><br>
+        <label for="ratingFB">Rating:</label>
+        <select name="ratingFB" id="ratingFB" required>
+            <option disabled selecting value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+        <label for="comments"></label><br>
+        <textarea name="comments" id="comments" cols="64" rows="7" placeholder="Please share any additional feedback abour your visit here: " required></textarea><br>
+        <input type="submit" value="Submit">
+    </form><br><br><br>
+    <div id="fbSubmission"></div>
 </body>
 </html>
